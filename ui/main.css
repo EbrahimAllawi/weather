@@ -1,0 +1,97 @@
+:root {
+    --main: #002B5B;
+    --secound: #1A5F7A;
+    --help: #57C5B6;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 601px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    box-sizing: content-box;
+}
+
+.app {
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: 
+    "appBar"
+    "main"
+    "hourly"
+    "daily"
+    ;
+    grid-template-rows: 35px auto auto auto;
+}
+
+.app-bar {
+    grid-area: appBar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-bar .search-box {
+
+}
+.app-bar .search-btn {
+    margin-left: 5px;
+}
+.main {
+    grid-area: main;
+}
+.main .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main .container .city {
+    font-size: 40px;
+    /* font-weight: bold; */
+}
+.main .container .info-day {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    
+}
+.main .container .info-day .weather-status-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .container .info-day > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main .container .info-day .temp {
+    font-size: 50px;
+    /* font-weight: bold; */
+}
+.main .container .info-day .city {
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.hourly {
+    grid-area: hourly;
+}
+.daily {
+    grid-area: daily;
+}
